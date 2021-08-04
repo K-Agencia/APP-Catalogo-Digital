@@ -1,0 +1,50 @@
+.landingPage {
+    background: #e4e4e4;
+    text-align: center;
+}
+
+.landingPage .imglandingPage{
+    width: 100%;
+}
+
+.landingPage h2 {
+    margin: 1em 0;
+    font-size: 3em;
+    color: #d2010d;
+    font-family: "ColgateReady-Bold";
+}
+
+.landingPage p {
+    font-size: 1.3em;
+    color: #868483;
+    font-family: "ColgateReady-Light";
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4em;
+}
+
+.links a {
+    text-decoration: none;
+    font-family: "ColgateReady-Light";
+    color: #8a8887;
+}
+
+.links a:hover {
+    font-family: "ColgateReady-Bold";
+    transform: scale(1.2);
+    color: #d2010d;
+}
+
+.divSlider{
+    margin-bottom: 4em;  
+}
+
+@media only screen and (max-width: 480px) {
+    .links {
+        flex-direction: column;
+        margin-bottom: 4em;
+    }
+}

@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "ColgateReady-Regular";
+  src: url('../font/ColgateReady-Regular.ttf');
+}
+
+@font-face {
+  font-family: "ColgateReady-Light";
+  src: url('../font/ColgateReady-Light.ttf');
+}
+
+@font-face {
+  font-family: "ColgateReady-Bold";
+  src: url('../font/ColgateReady-Bold.ttf');
+}
+
+body{
+  font-family: "ColgateReady-Light" !important;
+  font-size: 1em;
+  background: #e4e4e4;
+}
+
+body::-webkit-scrollbar {
+	width: 10px;
+  padding-right: 5px;
+	background: #e2e2e2;
+  position: relative;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: rgba(210, 1, 13,50);
+	border-radius: 10px;
+	border-right: 1px solid #b40009;
+  position: relative;
+}

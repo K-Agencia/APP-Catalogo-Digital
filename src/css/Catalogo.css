@@ -1,0 +1,42 @@
+.Catalogo{
+    width: 90%;
+    margin: 1.5em auto;
+    padding: 0 1em;
+}
+
+.titleCatalogo{
+    font-family: "ColgateReady-Bold";
+    text-align: center;
+    font-size: 3em;
+    font-style: italic;
+    color: #8a8887;
+    margin: 2em 0 1em;
+}
+
+.imgCatalogo{
+    width: 100%;
+    position: relative;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.buttonsCatalogo{
+    display: flex;
+    height: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+    .Catalogo{
+        width: 100%;
+        margin: 1.5em auto;
+        padding: 0 0.5em;
+    }
+    .titleCatalogo{
+        font-size: 1.5em;
+    }
+
+    .buttonsCatalogo{
+        display: flex;
+        flex-direction: row;
+        height: 20px;
+    }
+}

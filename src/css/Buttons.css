@@ -1,0 +1,50 @@
+.imgButton{
+    width: 5rem;
+}
+
+.url{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+
+    font-family: "ColgateReady-Regular";
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    font-style: italic;
+
+    z-index: 100;
+    position: relative;
+    bottom: 150px;
+    left: 60px;
+}
+
+.url:hover{
+    transform: scale(1.03);
+    filter: saturate(200%);
+    color: #007aff;
+}
+
+@media only screen and (max-width: 480px) {
+    .imgButton{
+        width: 30px;
+    }
+    
+    .url{
+        width: 30px;
+        display: flex;
+        /* flex-direction: column; */
+        margin: 0.2em;
+    
+        z-index: 100;
+        position: relative;
+        bottom: 40px;
+        left: 10px;
+    }
+
+    .url p{
+        display: none;
+    }
+    
+}
