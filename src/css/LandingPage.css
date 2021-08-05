@@ -36,6 +36,7 @@
     font-family: "ColgateReady-Bold";
     transform: scale(1.2);
     color: #d2010d;
+    background: transparent;
 }
 
 .divSlider{
@@ -43,8 +44,25 @@
 }
 
 @media only screen and (max-width: 480px) {
+    .landingPage {
+        margin-top: 5em;
+    }
+
     .links {
-        flex-direction: column;
-        margin-bottom: 4em;
+        display: none;
+    }
+    .landingPage h2 {
+        display: none;
+        /* margin: 1em 0;
+        font-size: 1.5em;
+        color: #d2010d;
+        font-family: "ColgateReady-Bold"; */
+    }
+    
+    .landingPage p {
+        margin-top: 2em;
+        font-size: 0.8em;
+        color: #868483;
+        font-family: "ColgateReady-Light";
     }
 }

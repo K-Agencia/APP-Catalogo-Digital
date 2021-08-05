@@ -6,3 +6,14 @@
 .swiper-slide img{
     border-bottom-right-radius: 100px;
 }
+
+@media only screen and (max-width: 480px) {
+    .swiper-slide img{
+        border-bottom-right-radius: 10px;
+    }
+
+    .swiper-button-prev, .swiper-button-next, .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{
+        --swiper-theme-color:red;
+        --swiper-navigation-size:20px;
+    }
+}

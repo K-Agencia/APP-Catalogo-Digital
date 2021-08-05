@@ -2,7 +2,7 @@ import React from 'react';
 import { LadingPage_Slider1, LadingPage_Slider2 } from "../Constants/Images";
 import "../css/Slider.css";
 
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import SwiperCore, {Autoplay, Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/swiper.scss';
@@ -10,7 +10,7 @@ import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
 import 'swiper/components/scrollbar/scrollbar.scss';
 
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
+SwiperCore.use([Autoplay, Navigation, Pagination, Scrollbar, A11y]);
 
 const getSlider = (slider) => {
   if (slider === "1") {
@@ -31,6 +31,10 @@ const Slider = ({ slider }) => {
       navigation
       pagination={{ clickable: true }}
       loop={true}
+      autoplay={{
+        "delay": 2500,
+        "disableOnInteraction": false
+      }}
     >
       {imgs.map(imageSlider => (
         <SwiperSlide><a href="/"><img src={imageSlider.slider1} className="d-block w-100" alt="..." /></a></SwiperSlide>

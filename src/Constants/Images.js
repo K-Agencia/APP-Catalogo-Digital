@@ -13,17 +13,17 @@ import slider1_7 from "../img/Landing/Infantil.jpg";
 
 //////// Uso en Consultorio ////////
 import imgUsoConsultorio_1 from "../img/UsoConsultorio/Barniz_de_Fluor.jpg";
-import imgUsoConsultorio_2 from "../img/UsoConsultorio/Enjuague_Bucal_Soft_Mint_1L.jpg";
-import imgUsoConsultorio_3 from "../img/UsoConsultorio/Enjuague_Periogard_2.jpg";
+import imgUsoConsultorio_2 from "../img/UsoConsultorio/Enjuague_Periogard_2.jpg";
+import imgUsoConsultorio_3 from "../img/UsoConsultorio/Enjuague_Bucal_Soft_Mint_1L.jpg";
 
 //////// Linea especializada ////////
-import imgLineaEspecializada_1 from "../img/LineaEspecializada/OrthoGard_Cepillo.jpg";
-import imgLineaEspecializada_2 from "../img/LineaEspecializada/OrthoGard_Enjuague.jpg";
-import imgLineaEspecializada_3 from "../img/LineaEspecializada/OrthoGard_regimen.jpg";
+import imgLineaEspecializada_1 from "../img/LineaEspecializada/PerioGard_regimen2.jpg";
+import imgLineaEspecializada_2 from "../img/LineaEspecializada/PerioGard_Enjuague.jpg";
+import imgLineaEspecializada_3 from "../img/LineaEspecializada/PerioGard_Crema_dentalc.jpg";
 import imgLineaEspecializada_4 from "../img/LineaEspecializada/PerioGard_Cepillo.jpg";
-import imgLineaEspecializada_5 from "../img/LineaEspecializada/PerioGard_Crema_dentalc.jpg";
-import imgLineaEspecializada_6 from "../img/LineaEspecializada/PerioGard_Enjuague.jpg";
-import imgLineaEspecializada_7 from "../img/LineaEspecializada/PerioGard_regimen2.jpg";
+import imgLineaEspecializada_5 from "../img/LineaEspecializada/OrthoGard_regimen.jpg";
+import imgLineaEspecializada_6 from "../img/LineaEspecializada/OrthoGard_Enjuague.jpg";
+import imgLineaEspecializada_7 from "../img/LineaEspecializada/OrthoGard_Cepillo.jpg";
 
 //////// Cepillos Especializados ////////
 import imgCepillosEspecializados_1 from "../img/CepillosEspecializados/Cepillo_Slim_Soft.jpg";
@@ -38,7 +38,8 @@ import imgLineaSensibilidad_1 from "../img/LineaSensibilidad/Crema_CSPR.jpg";
 import imgLineaSensibilidad_2 from "../img/LineaSensibilidad/Crema_CSPR_Gums.jpg";
 import imgLineaSensibilidad_3 from "../img/LineaSensibilidad/Crema_CSPR_Real_White.jpg";
 import imgLineaSensibilidad_4 from "../img/LineaSensibilidad/Plax_Soft_Mint.jpg";
-import imgLineaSensibilidad_5 from "../img/LineaSensibilidad/Obras_de_arte_UltraSoft.jpg";
+import imgLineaSensibilidad_5 from "../img/LineaSensibilidad/Ultra_Softc.jpg";
+import imgLineaSensibilidad_6 from "../img/LineaSensibilidad/Obras_de_arte_UltraSoft.jpg";
 
 //////// Multibeneficios ////////
 import imgMultibeneficios_1 from "../img/Multibeneficios/Cremas_Total12.jpg";
@@ -104,7 +105,8 @@ export const imgLineaSensibilidad =
     "imgLineaSensibilidad_2": imgLineaSensibilidad_2,
     "imgLineaSensibilidad_3": imgLineaSensibilidad_3,
     "imgLineaSensibilidad_4": imgLineaSensibilidad_4,
-    "imgLineaSensibilidad_5": imgLineaSensibilidad_5
+    "imgLineaSensibilidad_5": imgLineaSensibilidad_5,
+    "imgLineaSensibilidad_6": imgLineaSensibilidad_6
 }
 
 export const imgMultibeneficios =

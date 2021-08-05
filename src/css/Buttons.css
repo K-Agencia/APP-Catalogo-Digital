@@ -21,6 +21,7 @@
 }
 
 .url:hover{
+    background: transparent;
     transform: scale(1.03);
     filter: saturate(200%);
     color: #007aff;

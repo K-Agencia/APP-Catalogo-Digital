@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import LandingPage from '../Pages/LandingPage';
 import Catalogo from '../Pages/Catalogo';
+// import SearchBar from './SearchBar';
+// import { UsoConsultorio, LineaEspecializada, CepillosEspecializados, LineaSensibilidad, Multibeneficios } from "../Constants/Productos"
 
 const Routers = () => {
     return (
@@ -14,6 +16,7 @@ const Routers = () => {
                     <Route exact path="/CepillosEspecializados" component={() => <Catalogo title="Cepillos Especializados"></Catalogo>} />
                     <Route exact path="/LineaSensibilidad" component={() => <Catalogo title="Línea Sensibilidad"></Catalogo>} />
                     <Route exact path="/Multibeneficios" component={() => <Catalogo title="Multibeneficios"></Catalogo>} />
+                    {/* <Route exact path="/Search" component={() => <SearchBar placeholder="Search" data={UsoConsultorio, LineaEspecializada, CepillosEspecializados, LineaSensibilidad, Multibeneficios}></SearchBar>} /> */}
                     {/* <Route exact path="/trends" component={Trends} />
                     <Route path="*" component={Error} /> */}
                 </Switch>

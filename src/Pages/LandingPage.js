@@ -4,6 +4,7 @@ import {LadingPage_Slider1} from '../Constants/Images';
 import "../css/LandingPage.css";
 
 const LandingPage = () => {
+    window.document.title = 'Home - Catálogo Digital';
     return (
         <div className="landingPage">
             {/* <Slider slider="1"></Slider> */}
