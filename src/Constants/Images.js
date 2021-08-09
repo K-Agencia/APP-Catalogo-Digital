@@ -1,54 +1,54 @@
-import Logo from "../img/Colgate_logo.png";
-import buttonCart from "../img/Landing/Comprar_Ahora.png"
-import buttonWhatsapp from "../img/Landing/Contacte_a_su_asesor.png"
+let Logo = "https://imagenes.kagencia.com/catalogodigital/Colgate_logo.png";
+let buttonCart = "https://imagenes.kagencia.com/catalogodigital/Landing/Comprar_Ahora.png"
+let buttonWhatsapp = "https://imagenes.kagencia.com/catalogodigital/Landing/Contacte_a_su_asesor.png"
 
 //////// ladingPage ////////
-import slider1_1 from "../img/Landing/KV_Duraphat.jpg";
-import slider1_2 from "../img/Landing/Consultorio.jpg";
-import slider1_3 from "../img/Landing/Especializada.jpg";
-import slider1_4 from "../img/Landing/Cep_Especializados.jpg";
-import slider1_5 from "../img/Landing/Sensibilidad.jpg";
-import slider1_6 from "../img/Landing/Multibeneficios.jpg";
-import slider1_7 from "../img/Landing/Infantil.jpg";
+let slider1_1 = "https://imagenes.kagencia.com/catalogodigital/Landing/KV_Duraphat.jpg";
+let slider1_2 = "https://imagenes.kagencia.com/catalogodigital/Landing/Consultorio.jpg";
+let slider1_3 = "https://imagenes.kagencia.com/catalogodigital/Landing/Especializada.jpg";
+let slider1_4 = "https://imagenes.kagencia.com/catalogodigital/Landing/Cep_Especializados.jpg";
+let slider1_5 = "https://imagenes.kagencia.com/catalogodigital/Landing/Sensibilidad.jpg";
+let slider1_6 = "https://imagenes.kagencia.com/catalogodigital/Landing/Multibeneficios.jpg";
+let slider1_7 = "https://imagenes.kagencia.com/catalogodigital/Landing/Infantil.jpg";
 
 //////// Uso en Consultorio ////////
-import imgUsoConsultorio_1 from "../img/UsoConsultorio/Barniz_de_Fluor.jpg";
-import imgUsoConsultorio_2 from "../img/UsoConsultorio/Enjuague_Periogard_2.jpg";
-import imgUsoConsultorio_3 from "../img/UsoConsultorio/Enjuague_Bucal_Soft_Mint_1L.jpg";
+let imgUsoConsultorio_1 = "https://imagenes.kagencia.com/catalogodigital/UsoConsultorio/Barniz_de_Fluor.jpg";
+let imgUsoConsultorio_2 = "https://imagenes.kagencia.com/catalogodigital/UsoConsultorio/Enjuague_Periogard_2.jpg";
+let imgUsoConsultorio_3 = "https://imagenes.kagencia.com/catalogodigital/UsoConsultorio/Enjuague_Bucal_Soft_Mint_1L.jpg";
 
 //////// Linea especializada ////////
-import imgLineaEspecializada_1 from "../img/LineaEspecializada/PerioGard_regimen2.jpg";
-import imgLineaEspecializada_2 from "../img/LineaEspecializada/PerioGard_Enjuague.jpg";
-import imgLineaEspecializada_3 from "../img/LineaEspecializada/PerioGard_Crema_dentalc.jpg";
-import imgLineaEspecializada_4 from "../img/LineaEspecializada/PerioGard_Cepillo.jpg";
-import imgLineaEspecializada_5 from "../img/LineaEspecializada/OrthoGard_regimen.jpg";
-import imgLineaEspecializada_6 from "../img/LineaEspecializada/OrthoGard_Enjuague.jpg";
-import imgLineaEspecializada_7 from "../img/LineaEspecializada/OrthoGard_Cepillo.jpg";
+let imgLineaEspecializada_1 = "https://imagenes.kagencia.com/catalogodigital/LineaEspecializada/PerioGard_regimen2.jpg";
+let imgLineaEspecializada_2 = "https://imagenes.kagencia.com/catalogodigital/LineaEspecializada/PerioGard_Enjuague.jpg";
+let imgLineaEspecializada_3 = "https://imagenes.kagencia.com/catalogodigital/LineaEspecializada/PerioGard_Crema_dentalc.jpg";
+let imgLineaEspecializada_4 = "https://imagenes.kagencia.com/catalogodigital/LineaEspecializada/PerioGard_Cepillo.jpg";
+let imgLineaEspecializada_5 = "https://imagenes.kagencia.com/catalogodigital/LineaEspecializada/OrthoGard_regimen.jpg";
+let imgLineaEspecializada_6 = "https://imagenes.kagencia.com/catalogodigital/LineaEspecializada/OrthoGard_Enjuague.jpg";
+let imgLineaEspecializada_7 = "https://imagenes.kagencia.com/catalogodigital/LineaEspecializada/OrthoGard_Cepillo.jpg";
 
 //////// Cepillos Especializados ////////
-import imgCepillosEspecializados_1 from "../img/CepillosEspecializados/Cepillo_Slim_Soft.jpg";
-import imgCepillosEspecializados_2 from "../img/CepillosEspecializados/Cepillo_360.jpg";
-import imgCepillosEspecializados_3 from "../img/CepillosEspecializados/OrthoGard_Cepillo.jpg";
-import imgCepillosEspecializados_4 from "../img/CepillosEspecializados/PerioGard_Cepillo.jpg";
-import imgCepillosEspecializados_5 from "../img/CepillosEspecializados/Cepillo_Twister.jpg";
-import imgCepillosEspecializados_6 from "../img/CepillosEspecializados/Cepillo_Bambu.jpg";
+let imgCepillosEspecializados_1 = "https://imagenes.kagencia.com/catalogodigital/CepillosEspecializados/Cepillo_Slim_Soft.jpg";
+let imgCepillosEspecializados_2 = "https://imagenes.kagencia.com/catalogodigital/CepillosEspecializados/Cepillo_360.jpg";
+let imgCepillosEspecializados_3 = "https://imagenes.kagencia.com/catalogodigital/CepillosEspecializados/OrthoGard_Cepillo.jpg";
+let imgCepillosEspecializados_4 = "https://imagenes.kagencia.com/catalogodigital/CepillosEspecializados/PerioGard_Cepillo.jpg";
+let imgCepillosEspecializados_5 = "https://imagenes.kagencia.com/catalogodigital/CepillosEspecializados/Cepillo_Twister.jpg";
+let imgCepillosEspecializados_6 = "https://imagenes.kagencia.com/catalogodigital/CepillosEspecializados/Cepillo_Bambu.jpg";
 
 //////// Linea Especializada ////////
-import imgLineaSensibilidad_1 from "../img/LineaSensibilidad/Crema_CSPR.jpg";
-import imgLineaSensibilidad_2 from "../img/LineaSensibilidad/Crema_CSPR_Gums.jpg";
-import imgLineaSensibilidad_3 from "../img/LineaSensibilidad/Crema_CSPR_Real_White.jpg";
-import imgLineaSensibilidad_4 from "../img/LineaSensibilidad/Plax_Soft_Mint.jpg";
-import imgLineaSensibilidad_5 from "../img/LineaSensibilidad/Ultra_Softc.jpg";
-import imgLineaSensibilidad_6 from "../img/LineaSensibilidad/Obras_de_arte_UltraSoft.jpg";
+let imgLineaSensibilidad_1 = "https://imagenes.kagencia.com/catalogodigital/LineaSensibilidad/Crema_CSPR.jpg";
+let imgLineaSensibilidad_2 = "https://imagenes.kagencia.com/catalogodigital/LineaSensibilidad/Crema_CSPR_Gums.jpg";
+let imgLineaSensibilidad_3 = "https://imagenes.kagencia.com/catalogodigital/LineaSensibilidad/Crema_CSPR_Real_White.jpg";
+let imgLineaSensibilidad_4 = "https://imagenes.kagencia.com/catalogodigital/LineaSensibilidad/Plax_Soft_Mint.jpg";
+let imgLineaSensibilidad_5 = "https://imagenes.kagencia.com/catalogodigital/LineaSensibilidad/Ultra_Softc.jpg";
+let imgLineaSensibilidad_6 = "https://imagenes.kagencia.com/catalogodigital/LineaSensibilidad/Obras_de_arte_UltraSoft.jpg";
 
 //////// Multibeneficios ////////
-import imgMultibeneficios_1 from "../img/Multibeneficios/Cremas_Total12.jpg";
-import imgMultibeneficios_2 from "../img/Multibeneficios/Crema_Total12_Antisarro.jpg";
-import imgMultibeneficios_3 from "../img/Multibeneficios/Enjuagues_Total_12.jpg";
-import imgMultibeneficios_4 from "../img/Multibeneficios/Enjuague_Total_12_Antisarro.jpg";
-import imgMultibeneficios_5 from "../img/Multibeneficios/Cepillo_Teraphy.jpg";
-import imgMultibeneficios_6 from "../img/Multibeneficios/Seda_dental_Menta.jpg";
-import imgMultibeneficios_7 from "../img/Multibeneficios/Seda_Dental.jpg";
+let imgMultibeneficios_1 = "https://imagenes.kagencia.com/catalogodigital/Multibeneficios/Cremas_Total12.jpg";
+let imgMultibeneficios_2 = "https://imagenes.kagencia.com/catalogodigital/Multibeneficios/Crema_Total12_Antisarro.jpg";
+let imgMultibeneficios_3 = "https://imagenes.kagencia.com/catalogodigital/Multibeneficios/Enjuagues_Total_12.jpg";
+let imgMultibeneficios_4 = "https://imagenes.kagencia.com/catalogodigital/Multibeneficios/Enjuague_Total_12_Antisarro.jpg";
+let imgMultibeneficios_5 = "https://imagenes.kagencia.com/catalogodigital/Multibeneficios/Cepillo_Teraphy.jpg";
+let imgMultibeneficios_6 = "https://imagenes.kagencia.com/catalogodigital/Multibeneficios/Seda_dental_Menta.jpg";
+let imgMultibeneficios_7 = "https://imagenes.kagencia.com/catalogodigital/Multibeneficios/Seda_Dental.jpg";
 
 export const Images = {
     "Logo": Logo,
@@ -62,14 +62,14 @@ export const Images = {
 
 export const LadingPage_Slider1 = {"slider1": slider1_1};
 
-export const LadingPage_Slider2 = [
-    {"slider1": slider1_2},
-    {"slider1": slider1_3},
-    {"slider1": slider1_4},
-    {"slider1": slider1_5},
-    {"slider1": slider1_6},
-    {"slider1": slider1_7}
-]
+export const LadingPage_Slider2 = {
+    "slider2": slider1_2,
+    "slider3": slider1_3,
+    "slider4": slider1_4,
+    "slider5": slider1_5,
+    "slider6": slider1_6,
+    "slider7": slider1_7
+}
 
 export const imgUsoConsultorio =
 {

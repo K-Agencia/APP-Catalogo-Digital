@@ -1,10 +1,10 @@
-.Catalogo{
+.Catalogo {
     width: 90%;
     margin: 1.5em auto;
     padding: 0 1em;
 }
 
-.titleCatalogo{
+.titleCatalogo {
     font-family: "ColgateReady-Bold";
     text-align: center;
     font-size: 3em;
@@ -13,30 +13,31 @@
     margin: 2em 0 1em;
 }
 
-.imgCatalogo{
+.imgCatalogo {
     width: 100%;
     position: relative;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.buttonsCatalogo{
+.buttonsCatalogo {
     display: flex;
     height: 20px;
 }
 
 @media only screen and (max-width: 480px) {
-    .Catalogo{
+    .Catalogo {
         width: 100%;
         margin: 5em auto 1.5em;
         padding: 0 0.5em;
     }
-    .titleCatalogo{
+
+    .titleCatalogo {
         font-size: 1.5em;
     }
 
-    .buttonsCatalogo{
+    .buttonsCatalogo {
         display: flex;
         flex-direction: row;
-        height: 20px;
+        height: 10px;
     }
 }

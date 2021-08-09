@@ -1,28 +1,30 @@
 import React from 'react';
-import { LadingPage_Slider1, LadingPage_Slider2 } from "../Constants/Images";
+// import { LadingPage_Slider1, LadingPage_Slider2 } from "../Constants/Images";
+import { LadingPage_Slider2 } from "../Constants/Images";
 import "../css/Slider.css";
 
-import SwiperCore, {Autoplay, Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import SwiperCore, { Autoplay, Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
 import 'swiper/components/scrollbar/scrollbar.scss';
+import { Routes } from '../Constants/Routes';
 
 SwiperCore.use([Autoplay, Navigation, Pagination, Scrollbar, A11y]);
 
-const getSlider = (slider) => {
-  if (slider === "1") {
-    return LadingPage_Slider1;
-  } else {
-    return LadingPage_Slider2;
-  }
-}
+// const getSlider = (slider) => {
+//   if (slider === "1") {
+//     return LadingPage_Slider1;
+//   } else {
+//     return LadingPage_Slider2;
+//   }
+// }
 
 const Slider = ({ slider }) => {
 
-  const imgs = getSlider(slider);
+  // const imgs = getSlider(slider);
 
   return (
     <Swiper
@@ -36,9 +38,14 @@ const Slider = ({ slider }) => {
         "disableOnInteraction": false
       }}
     >
-      {imgs.map(imageSlider => (
+      <SwiperSlide><a href={Routes.UsoConsultorio}><img src={LadingPage_Slider2.slider2} className="d-block w-100" alt="..." /></a></SwiperSlide>
+      <SwiperSlide><a href={Routes.LineaEspecializada}><img src={LadingPage_Slider2.slider3} className="d-block w-100" alt="..." /></a></SwiperSlide>
+      <SwiperSlide><a href={Routes.CepillosEspecializados}><img src={LadingPage_Slider2.slider4} className="d-block w-100" alt="..." /></a></SwiperSlide>
+      <SwiperSlide><a href={Routes.LineaSensibilidad}><img src={LadingPage_Slider2.slider5} className="d-block w-100" alt="..." /></a></SwiperSlide>
+      <SwiperSlide><a href={Routes.Multibeneficios}><img src={LadingPage_Slider2.slider6} className="d-block w-100" alt="..." /></a></SwiperSlide>
+      {/* {imgs.map(imageSlider => (
         <SwiperSlide><a href="/"><img src={imageSlider.slider1} className="d-block w-100" alt="..." /></a></SwiperSlide>
-      ))}
+      ))} */}
     </Swiper>
   );
 

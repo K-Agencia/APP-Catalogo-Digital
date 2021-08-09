@@ -16,4 +16,9 @@
         --swiper-theme-color:red;
         --swiper-navigation-size:20px;
     }
+
+    .swiper-pagination-bullet {
+        width: 4px;
+        height: 4px;
+    }
 }

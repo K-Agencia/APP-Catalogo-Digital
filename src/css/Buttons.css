@@ -27,6 +27,10 @@
     color: #007aff;
 }
 
+.inactive {
+    display: none;
+}
+
 @media only screen and (max-width: 480px) {
     .imgButton{
         width: 30px;

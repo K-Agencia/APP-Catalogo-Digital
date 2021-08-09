@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from '../Components/Slider';
 import {LadingPage_Slider1} from '../Constants/Images';
+import { Routes } from '../Constants/Routes';
 import "../css/LandingPage.css";
 
 const LandingPage = () => {
@@ -13,11 +14,11 @@ const LandingPage = () => {
                 <h2>Catálogo Digital</h2>
                 <p>Seleccione la línea de interés, donde encontrará en detalle cada producto y opción de compra directa</p>
                 <div className="links">
-                    <a href="/UsoConsultorio">Uso Consultorio</a>
-                    <a href="/LineaEspecializada">Linea Especializada</a>
-                    <a href="/CepillosEspecializados">Cepillos Especializados</a>
-                    <a href="/LineaSensibilidad">Linea Sensibilidad</a>
-                    <a href="/Multibeneficios">Multibeneficios</a>
+                    <a href={Routes.UsoConsultorio}>Uso Consultorio</a>
+                    <a href={Routes.LineaEspecializada}>Linea Especializada</a>
+                    <a href={Routes.CepillosEspecializados}>Cepillos Especializados</a>
+                    <a href={Routes.LineaSensibilidad}>Linea Sensibilidad</a>
+                    <a href={Routes.Multibeneficios}>Multibeneficios</a>
                 </div>
                 <div className="divSlider">
                     <Slider slider="2"></Slider>

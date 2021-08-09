@@ -1,18 +1,29 @@
 import React, { useState } from "react";
 import "../css/SearchBar.css";
-// import SearchIcon from "@material-ui/icons/Search";
-// import CloseIcon from "@material-ui/icons/Close";
+import { UsoConsultorio, LineaEspecializada, CepillosEspecializados, LineaSensibilidad, Multibeneficios } from "../Constants/Productos"
+var accents = require('remove-accents');
 
-function SearchBar({ placeholder, data }) {
+function SearchBar() {
 
   const [filteredData, setFilteredData] = useState([]);
   const [wordEntered, setWordEntered] = useState("");
+  
+  let data = UsoConsultorio.concat(LineaEspecializada, CepillosEspecializados, LineaSensibilidad, Multibeneficios);
 
   const handleFilter = (event) => {
-    const searchWord = event.target.value;
+
+    let searchWord = event.target.value;
     setWordEntered(searchWord);
+
     const newFilter = data.filter((value) => {
-      return value.name.toLowerCase().includes(searchWord.toLowerCase());
+
+      let wordU = accents.has(searchWord); //true
+      let word = value.name;
+
+      if (!wordU) { word = accents.remove(word); }
+
+      return word.toLowerCase().includes(searchWord.toLowerCase());
+
     });
 
     if (searchWord === "") {
@@ -22,34 +33,24 @@ function SearchBar({ placeholder, data }) {
     }
   };
 
-//   const clearInput = () => {
-//     setFilteredData([]);
-//     setWordEntered("");
-//   };
-
   return (
     <div className="search">
       <div className="searchInputs">
         <input
-          type="text"
-          placeholder={placeholder}
+          className="form-control me-2"
+          type="search"
           value={wordEntered}
           onChange={handleFilter}
+          placeholder="Buscar"
+          aria-label="Search"
         />
-        <div className="searchIcon">
-          {/* {filteredData.length === 0 ? (
-            <SearchIcon />
-          ) : (
-            <CloseIcon id="clearBtn" onClick={clearInput} />
-          )} */}
-        </div>
       </div>
       {filteredData.length !== 0 && (
-        <div className="dataResult">
-          {filteredData.slice(0, 15).map((value, key) => {
+        <div className="dataResult" id="dataResult">
+          {filteredData.slice(0, 15).map((value, index) => {
             return (
-              <a className="dataItem" href={value.whatsapp} target="blank">
-                <p>{value.name} </p>
+              <a className="dataItem" href={`/${value._id}`} key={index}>
+                <p>{value.name}</p>
               </a>
             );
           })}

@@ -2,7 +2,6 @@ import React from 'react';
 import Button from '../Components/Button';
 import { UsoConsultorio, LineaEspecializada, CepillosEspecializados, LineaSensibilidad, Multibeneficios } from "../Constants/Productos";
 import "../css/Catalogo.css";
-// var accents = require('remove-accents');
 
 const getArray = (title) => {
 
@@ -13,19 +12,11 @@ const getArray = (title) => {
     else if (title === "Multibeneficios") { return Multibeneficios }
 }
 
-// const getPoint = (title) => {
-//     let point = title.replace(/ /g, "");
-//     accents.remove(point);    
-//     return point;
-// }
-
 const Catalogo = ({ title }) => {
+
     window.document.title = `${title} - Catálogo Digital`;
-
     const data = getArray(title);
-    // const point = getPoint(title);
-    // console.log(point);
-
+    
     return (
         <div className="Catalogo" >
             <h1 className="titleCatalogo">{title}</h1>
@@ -33,8 +24,8 @@ const Catalogo = ({ title }) => {
                 <div key={index} id={index}>
                     <img className="imgCatalogo" src={prod.img} alt="" />
                     <div className="buttonsCatalogo">
-                        <Button url={prod.cart} icon="cart"></Button>
-                        <Button url={prod.whatsapp} icon="whatsapp"></Button>
+                        <Button name={prod.name} url={prod.cart} icon="cart"></Button>
+                        <Button name={prod.name} url={prod.whatsapp} icon="whatsapp"></Button>
                     </div>
                 </div>
             ))}

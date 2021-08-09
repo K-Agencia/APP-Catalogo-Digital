@@ -12,6 +12,7 @@ a.navbar-brand{
 
 img.imgNav{
     width: 6em;
+    height: auto;
     position: absolute;
     top: -14px;
     left: 3em;
@@ -41,40 +42,16 @@ h3.navTitle{
         display: block;
         position: absolute;
         top: 25px;
-        left: 90px;
+        right: 50%;
 
         font-size: 1em;
         text-align: center;
         font-weight: 500;
         color: #d2010d;
         font-family: "ColgateReady-Bold";
-        /* font-style: italic; */
     }
-    /* .container-fluid{
-        display: flex;
-        flex-wrap: nowrap !important;
-        align-items: center;
-        justify-content: space-between;
+
+    .collapse .btn{
+        display: none;
     }
-    a.navbar-brand{
-        background: transparent;
-        width: 50px;
-    }
-    /* img.imgNav{
-        width: 3em;
-        position: absolute;
-        top: 0px;
-        left: 1em;
-    } 
-
-    h3.navbar-toggler{       
-        border: 0px;
-
-        font-size: 1em;
-        font-family: "ColgateReady-Bold";
-        color: #d2010d;
-        text-align: center;
-
-        position: absolute;
-    } */
 }
