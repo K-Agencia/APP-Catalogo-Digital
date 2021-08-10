@@ -19,6 +19,7 @@ const LandingPage = () => {
                     <a href={Routes.CepillosEspecializados}>Cepillos Especializados</a>
                     <a href={Routes.LineaSensibilidad}>Linea Sensibilidad</a>
                     <a href={Routes.Multibeneficios}>Multibeneficios</a>
+                    <a href={Routes.LineaInfantil}>Linea Infantil</a>
                 </div>
                 <div className="divSlider">
                     <Slider slider="2"></Slider>

@@ -1,4 +1,4 @@
-import { imgUsoConsultorio, imgLineaEspecializada, imgCepillosEspecializados, imgLineaSensibilidad, imgMultibeneficios } from "../Constants/Images";
+import { imgUsoConsultorio, imgLineaEspecializada, imgLineaInfantil, imgCepillosEspecializados, imgLineaSensibilidad, imgMultibeneficios } from "../Constants/Images";
 
 export const UsoConsultorio = [
     {
@@ -227,6 +227,51 @@ export const Multibeneficios = [
         "_id": "Multibeneficios#6",
         "name": "Seda Dental Colgate Total",
         "img": `${imgMultibeneficios.imgMultibeneficios_7}`,
+        "cart": "",
+        "whatsapp": ""
+    }
+];
+
+export const LineaInfantil = [
+    {
+        "_id": "LineaInfantil#0",
+        "name": "Cepillo Dental Colgate Kids 0-2 Años",
+        "img": `${imgLineaInfantil.imgLineaInfantil_1}`,
+        "cart": "",
+        "whatsapp": ""
+    },
+    {
+        "_id": "LineaInfantil#1",
+        "name": "Gel Dental Colgate My First",
+        "img": `${imgLineaInfantil.imgLineaInfantil_2}`,
+        "cart": "",
+        "whatsapp": ""
+    },
+    {
+        "_id": "LineaInfantil#2",
+        "name": "Cepillo Dental Colgate Kids 2-5 Años",
+        "img": `${imgLineaInfantil.imgLineaInfantil_3}`,
+        "cart": "",
+        "whatsapp": ""
+    },
+    {
+        "_id": "LineaInfantil#3",
+        "name": "Crema Dental Colgate Smiles 2-5 Años",
+        "img": `${imgLineaInfantil.imgLineaInfantil_4}`,
+        "cart": "",
+        "whatsapp": ""
+    },
+    {
+        "_id": "LineaInfantil#4",
+        "name": "Cepillo Dental Colgate Kids 6+ Años",
+        "img": `${imgLineaInfantil.imgLineaInfantil_5}`,
+        "cart": "",
+        "whatsapp": ""
+    },
+    {
+        "_id": "LineaInfantil#5",
+        "name": "Enjuague Bucal Colgate Plax Kids 6+ Años Sin alcdhol",
+        "img": `${imgLineaInfantil.imgLineaInfantil_6}`,
         "cart": "",
         "whatsapp": ""
     }

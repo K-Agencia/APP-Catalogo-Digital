@@ -33,11 +33,14 @@ const Nav = () => {
               <li className="nav-item">
                 <a className="nav-link" href={Routes.Multibeneficios}>Multibeneficios</a>
               </li>
+              <li className="nav-item">
+                <a className="nav-link" href={Routes.LineaInfantil}>Linea Infantil</a>
+              </li>
             </ul>
             
             {/* <form className="d-flex"> */}
               <SearchBar></SearchBar>
-              <button className="btn btn-outline-danger" type="submit">Search</button>
+              {/* <button className="btn btn-outline-danger" type="submit">Search</button> */}
             {/* </form> */}
           </div>
         </div>

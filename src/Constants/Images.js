@@ -25,6 +25,14 @@ let imgLineaEspecializada_5 = "https://imagenes.kagencia.com/catalogodigital/Lin
 let imgLineaEspecializada_6 = "https://imagenes.kagencia.com/catalogodigital/LineaEspecializada/OrthoGard_Enjuague.jpg";
 let imgLineaEspecializada_7 = "https://imagenes.kagencia.com/catalogodigital/LineaEspecializada/OrthoGard_Cepillo.jpg";
 
+//////// Linea infantil ////////
+let imgLineaInfantil_1 = "https://imagenes.kagencia.com/catalogodigital/LineaInfantil/cepillo_kids_0_2_edad.jpg";
+let imgLineaInfantil_2 = "https://imagenes.kagencia.com/catalogodigital/LineaInfantil/crema_kids_my_first.jpg";
+let imgLineaInfantil_3 = "https://imagenes.kagencia.com/catalogodigital/LineaInfantil/cepillo_kids_2_5_edad.jpg";
+let imgLineaInfantil_4 = "https://imagenes.kagencia.com/catalogodigital/LineaInfantil/crema_kids.jpg";
+let imgLineaInfantil_5 = "https://imagenes.kagencia.com/catalogodigital/LineaInfantil/cepillos_6.jpg";
+let imgLineaInfantil_6 = "https://imagenes.kagencia.com/catalogodigital/LineaInfantil/enjuague_kids.jpg";
+
 //////// Cepillos Especializados ////////
 let imgCepillosEspecializados_1 = "https://imagenes.kagencia.com/catalogodigital/CepillosEspecializados/Cepillo_Slim_Soft.jpg";
 let imgCepillosEspecializados_2 = "https://imagenes.kagencia.com/catalogodigital/CepillosEspecializados/Cepillo_360.jpg";
@@ -60,7 +68,7 @@ export const Images = {
 //     {"slider1": slider1_1},
 // ];
 
-export const LadingPage_Slider1 = {"slider1": slider1_1};
+export const LadingPage_Slider1 = { "slider1": slider1_1 };
 
 export const LadingPage_Slider2 = {
     "slider2": slider1_2,
@@ -87,6 +95,16 @@ export const imgLineaEspecializada =
     "imgLineaEspecializada_5": imgLineaEspecializada_5,
     "imgLineaEspecializada_6": imgLineaEspecializada_6,
     "imgLineaEspecializada_7": imgLineaEspecializada_7
+}
+
+export const imgLineaInfantil =
+{
+    "imgLineaInfantil_1": imgLineaInfantil_1,
+    "imgLineaInfantil_2": imgLineaInfantil_2,
+    "imgLineaInfantil_3": imgLineaInfantil_3,
+    "imgLineaInfantil_4": imgLineaInfantil_4,
+    "imgLineaInfantil_5": imgLineaInfantil_5,
+    "imgLineaInfantil_6": imgLineaInfantil_6
 }
 
 export const imgCepillosEspecializados =

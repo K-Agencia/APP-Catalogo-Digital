@@ -15,6 +15,7 @@ const Routers = () => {
                     <Route exact path={Routes.CepillosEspecializados} component={() => <Catalogo title="Cepillos Especializados"></Catalogo>} />
                     <Route exact path={Routes.LineaSensibilidad} component={() => <Catalogo title="Línea Sensibilidad"></Catalogo>} />
                     <Route exact path={Routes.Multibeneficios} component={() => <Catalogo title="Multibeneficios"></Catalogo>} />
+                    <Route exact path={Routes.LineaInfantil} component={() => <Catalogo title="Linea Infantil"></Catalogo>} />
                 </Switch>
             </Router>
         </div>

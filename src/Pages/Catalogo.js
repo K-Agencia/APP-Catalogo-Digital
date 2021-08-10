@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '../Components/Button';
-import { UsoConsultorio, LineaEspecializada, CepillosEspecializados, LineaSensibilidad, Multibeneficios } from "../Constants/Productos";
+import { UsoConsultorio, LineaEspecializada, CepillosEspecializados, LineaSensibilidad, Multibeneficios, LineaInfantil } from "../Constants/Productos";
 import "../css/Catalogo.css";
 
 const getArray = (title) => {
@@ -10,11 +10,13 @@ const getArray = (title) => {
     else if (title === "Cepillos Especializados") { return CepillosEspecializados }
     else if (title === "Línea Sensibilidad") { return LineaSensibilidad }
     else if (title === "Multibeneficios") { return Multibeneficios }
+    else if (title === "Linea Infantil") { return LineaInfantil }
 }
 
 const Catalogo = ({ title }) => {
 
     window.document.title = `${title} - Catálogo Digital`;
+    console.log(window.screen.width, window.screen.height);
     const data = getArray(title);
     
     return (

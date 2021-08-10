@@ -43,6 +43,7 @@ const Slider = ({ slider }) => {
       <SwiperSlide><a href={Routes.CepillosEspecializados}><img src={LadingPage_Slider2.slider4} className="d-block w-100" alt="..." /></a></SwiperSlide>
       <SwiperSlide><a href={Routes.LineaSensibilidad}><img src={LadingPage_Slider2.slider5} className="d-block w-100" alt="..." /></a></SwiperSlide>
       <SwiperSlide><a href={Routes.Multibeneficios}><img src={LadingPage_Slider2.slider6} className="d-block w-100" alt="..." /></a></SwiperSlide>
+      <SwiperSlide><a href={Routes.LineaInfantil}><img src={LadingPage_Slider2.slider7} className="d-block w-100" alt="..." /></a></SwiperSlide>
       {/* {imgs.map(imageSlider => (
         <SwiperSlide><a href="/"><img src={imageSlider.slider1} className="d-block w-100" alt="..." /></a></SwiperSlide>
       ))} */}

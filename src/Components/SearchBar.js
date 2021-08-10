@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../css/SearchBar.css";
-import { UsoConsultorio, LineaEspecializada, CepillosEspecializados, LineaSensibilidad, Multibeneficios } from "../Constants/Productos"
+import { UsoConsultorio, LineaEspecializada, CepillosEspecializados, LineaSensibilidad, Multibeneficios, LineaInfantil } from "../Constants/Productos"
 var accents = require('remove-accents');
 
 function SearchBar() {
@@ -8,7 +8,7 @@ function SearchBar() {
   const [filteredData, setFilteredData] = useState([]);
   const [wordEntered, setWordEntered] = useState("");
   
-  let data = UsoConsultorio.concat(LineaEspecializada, CepillosEspecializados, LineaSensibilidad, Multibeneficios);
+  let data = UsoConsultorio.concat(LineaEspecializada, CepillosEspecializados, LineaSensibilidad, Multibeneficios, LineaInfantil);
 
   const handleFilter = (event) => {
 

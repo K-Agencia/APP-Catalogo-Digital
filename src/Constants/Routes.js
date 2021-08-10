@@ -4,5 +4,6 @@ export const Routes = {
     "LineaEspecializada": "/LineaEspecializada",
     "CepillosEspecializados": "/CepillosEspecializados",
     "LineaSensibilidad": "/LineaSensibilidad",
-    "Multibeneficios": "/Multibeneficios"
+    "Multibeneficios": "/Multibeneficios",
+    "LineaInfantil": "/LineaInfantil"
 }
