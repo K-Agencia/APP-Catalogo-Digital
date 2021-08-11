@@ -10,7 +10,11 @@ const getArray = (title) => {
     else if (title === "Cepillos Especializados") { return CepillosEspecializados }
     else if (title === "Línea Sensibilidad") { return LineaSensibilidad }
     else if (title === "Multibeneficios") { return Multibeneficios }
-    else if (title === "Linea Infantil") { return LineaInfantil }
+    else if (title === "Línea Infantil") { return LineaInfantil }
+}
+
+const clickd = () =>{
+    console.log("click");
 }
 
 const Catalogo = ({ title }) => {
@@ -26,8 +30,8 @@ const Catalogo = ({ title }) => {
                 <div key={index} id={index}>
                     <img className="imgCatalogo" src={prod.img} alt="" />
                     <div className="buttonsCatalogo">
-                        <Button name={prod.name} url={prod.cart} icon="cart"></Button>
-                        <Button name={prod.name} url={prod.whatsapp} icon="whatsapp"></Button>
+                        <Button ctgTitle={title} name={prod.name} url={prod.cart} icon="cart"></Button>
+                        <Button ctgTitle={title} name={prod.name} url={prod.whatsapp} icon="whatsapp"></Button>
                     </div>
                 </div>
             ))}

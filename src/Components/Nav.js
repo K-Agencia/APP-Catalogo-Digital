@@ -34,7 +34,7 @@ const Nav = () => {
                 <a className="nav-link" href={Routes.Multibeneficios}>Multibeneficios</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href={Routes.LineaInfantil}>Linea Infantil</a>
+                <a className="nav-link" href={Routes.LineaInfantil}>Línea Infantil</a>
               </li>
             </ul>
             
