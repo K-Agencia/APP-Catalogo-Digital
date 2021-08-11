@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Catalogo-Digital/static/css/main.063edf36.chunk.css",
+    "main.js": "/Catalogo-Digital/static/js/main.f5dc94fb.chunk.js",
+    "main.js.map": "/Catalogo-Digital/static/js/main.f5dc94fb.chunk.js.map",
+    "runtime-main.js": "/Catalogo-Digital/static/js/runtime-main.f7b0b3e4.js",
+    "runtime-main.js.map": "/Catalogo-Digital/static/js/runtime-main.f7b0b3e4.js.map",
+    "static/css/2.7c9e1226.chunk.css": "/Catalogo-Digital/static/css/2.7c9e1226.chunk.css",
+    "static/js/2.ba29620f.chunk.js": "/Catalogo-Digital/static/js/2.ba29620f.chunk.js",
+    "static/js/2.ba29620f.chunk.js.map": "/Catalogo-Digital/static/js/2.ba29620f.chunk.js.map",
+    "index.html": "/Catalogo-Digital/index.html",
+    "static/css/2.7c9e1226.chunk.css.map": "/Catalogo-Digital/static/css/2.7c9e1226.chunk.css.map",
+    "static/css/main.063edf36.chunk.css.map": "/Catalogo-Digital/static/css/main.063edf36.chunk.css.map",
+    "static/js/2.ba29620f.chunk.js.LICENSE.txt": "/Catalogo-Digital/static/js/2.ba29620f.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/Catalogo-Digital/static/media/ColgateReady-Regular.5f9c1b91.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f7b0b3e4.js",
+    "static/css/2.7c9e1226.chunk.css",
+    "static/js/2.ba29620f.chunk.js",
+    "static/css/main.063edf36.chunk.css",
+    "static/js/main.f5dc94fb.chunk.js"
+  ]
+}
