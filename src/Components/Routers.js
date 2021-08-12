@@ -8,7 +8,7 @@ import { Routes } from '../Constants/Routes';
 const Routers = () => {
 
     useEffect(() => {
-        ReactGA.initialize('UA-204757348-1');
+        ReactGA.initialize('UA-204757348-2');
         // To Report Page View 
         ReactGA.pageview(window.location.pathname + window.location.search);
     }, [])

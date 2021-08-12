@@ -13,14 +13,10 @@ const getArray = (title) => {
     else if (title === "Línea Infantil") { return LineaInfantil }
 }
 
-const clickd = () =>{
-    console.log("click");
-}
-
 const Catalogo = ({ title }) => {
 
     window.document.title = `${title} - Catálogo Digital`;
-    console.log(window.screen.width, window.screen.height);
+    // console.log(window.screen.width, window.screen.height);
     const data = getArray(title);
     
     return (

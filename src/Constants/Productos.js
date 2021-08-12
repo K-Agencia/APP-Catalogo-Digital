@@ -79,7 +79,7 @@ export const LineaEspecializada = [
 export const CepillosEspecializados = [
     {
         "_id": "CepillosEspecializados#0",
-        "name": "Cepillo Dental Colgate",
+        "name": "Cepillo Dental Colgate, Slim Soft y Slim Soft Advance",
         "img": `${imgCepillosEspecializados.imgCepillosEspecializados_1}`,
         "cart": "##",
         "whatsapp": "###"
