@@ -19,9 +19,9 @@ const Button = ({ ctgTitle, name, url, icon }) => {
 
   return (
     <div>
-      <a href={url} id="btn" className={name === "Arte" ? "inactive" : "url"} onClick={() => ClickHandler({ name, icon, ctgTitle })}>
+      <a target="blank" href={url} id="btn" className={name === "Arte" ? "inactive" : "url"} onClick={() => ClickHandler({ name, icon, ctgTitle })}>
         <img className="imgButton" src={icon === "cart" ? `${Images.buttonCart}` : `${Images.buttonWhatsapp}`} alt="" />
-        <p className="textButton">{icon === "cart" ? `Comprar Ahora` : `Contacte a su asesor`}</p>
+        <p className="textButton">{icon === "cart" ? `Comprar Ahora` : `Contactar un asesor`}</p>
       </a>
     </div>
   );
