@@ -6,5 +6,6 @@ export const Routes = {
     "LineaSensibilidad": "/LineaSensibilidad",
     "Multibeneficios": "/Multibeneficios",
     "LineaInfantil": "/LineaInfantil",
-    "Login":"/"
+    "Login":"/",
+    "Prescripcion": "https://www.pres.kagencia.com/login"
 }

@@ -1,16 +1,16 @@
-nav.navbar{
+nav.navbar {
     position: fixed;
     width: 100%;
     z-index: 10000;
     top: 0;
 }
 
-a.navbar-brand{
+a.navbar-brand {
     background: transparent;
     width: 175px;
 }
 
-img.imgNav{
+img.imgNav {
     width: 6em;
     height: auto;
     position: absolute;
@@ -18,28 +18,162 @@ img.imgNav{
     left: 3em;
 }
 
-a.nav-link{
+a.nav-link {
     background: transparent;
     font-size: 0.96em;
 }
 
-a.nav-link:hover{
+a.nav-link:hover {
     font-weight: 500 !important;
     color: #d2010d !important;
 }
 
-h3.navTitle{
+.navbar-nav {
+    align-items: center;
+}
+
+h3.navTitle {
     display: none;
 }
 
+.nav-item.prep a.nav-link {
+    border: 2px solid #d2010d;
+    /* color: #fff; */
+    /* font-weight: 800; */
+    border-radius: 30px 0 30px 30px;
+}
+
+.nav-item.prep a.nav-link:hover {
+    /* color: #fff !important;
+    font-weight: 800 !important; */
+    transform: scale(1.01);
+}
+
+.container-fluid .btn {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    background: #fe2629;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 800;
+    border-radius: 50%;
+}
+
+.container-fluid .btn:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.navVisible {
+    width: 350px;
+    display: block;
+    position: absolute;
+    top: 57px;
+    right: 0px;
+    background: #dfdfdf;
+    padding: 16px;
+    border-radius: 16px 0 16px 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.navVisible.dis {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnUser,
+.navCel {
+    display: block;
+}
+
+.navNoVisible {
+    display: none;
+}
+
+.navVisible p.nameLogin {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.navVisible.dis .btnCS{
+    margin: 10px 0 0;
+}
+
+.btnCS {
+    background: #d2010d;
+    color: #fff;
+    font-weight: 800;
+    border: 0px;
+    margin: 8px 0 0;
+    padding: 5px 16px;
+    border-radius: 16px;
+}
+
+hr {
+    width: 30%;
+    height: 3px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* @media only screen and (max-width: 1400px) {
+    .navVisible {
+        display: block;
+        position: absolute;
+        top: 57px;
+        right: 0px;
+        background: #dfdfdf;
+        padding: 16px;
+        border-radius: 16px 0 16px 16px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+
+    .navVisible.dis {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+} */
+
+@media only screen and (max-width: 1400px) {
+    img.imgNav {
+        width: 6em;
+        height: auto;
+        position: absolute;
+        top: -14px;
+        left: 1em;
+    }
+
+    a.navbar-brand {
+        background: transparent;
+        width: 140px;
+    }
+
+    a.nav-link {
+        background: transparent;
+        font-size: 14px;
+    }
+
+    .btnCS {
+        margin: 0px;
+    }
+}
+
 @media only screen and (max-width: 480px) {
-    img.imgNav{
+    img.imgNav {
         width: 30%;
         height: 30%;
         position: static;
     }
 
-    h3.navTitle{
+    h3.navTitle {
         display: block;
         position: absolute;
         top: 25px;
@@ -52,7 +186,32 @@ h3.navTitle{
         font-family: "ColgateReady-Bold";
     }
 
-    .collapse .btn{
+    .collapse .btn {
         display: none;
+    }
+
+    .nav-item.prep a.nav-link {
+        text-align: center;
+    }
+
+    .navbar-nav {
+        align-items: normal;
+    }
+
+
+    .navCel p.nameLogin {
+        text-align: center;
+        font-weight: 700;
+        margin: 0 auto 10px;
+    }
+
+    .navCel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .search input {
+        width: 100% !important;
     }
 }

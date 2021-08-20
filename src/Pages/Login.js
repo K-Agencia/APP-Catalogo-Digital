@@ -2,16 +2,19 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Cookies from 'universal-cookie';
 import { Routes } from '../Constants/Routes';
+import swal from 'sweetalert';
+
 import '../css/Login.css';
 
-const baseUrl = "http://localhost:3001/odontologos";
+const baseUrl = "https://catalogodigital.kagencia.com/db_catalogo/";
+// const baseUrl = "http://localhost/db_catalogo/";
 const cookies = new Cookies();
 
 class Login extends Component {
 
   state = {
     form: {
-      cedula: ''
+      cedulas: ''
     }
   }
 
@@ -26,20 +29,23 @@ class Login extends Component {
   }
 
   iniciarSesion = async () => {
-    await axios.get(baseUrl, { params: { cedula: this.state.form.cedula } })
+    await axios.get(baseUrl, { params: { cedulas: this.state.form.cedulas } })
       .then(response => {
         return response.data;
       })
       .then(response => {
-        if (response.length > 0) {
-          var respuesta = response[0];
+        console.log(response);
+        let count = Object.keys(response).length;
+        if (count === 6) {
+          var respuesta = response;
           cookies.set('id', respuesta.id, { path: `/` });
-          cookies.set('cedula', respuesta.cedula, { path: `/` });
-          cookies.set('nombre', respuesta.nombre, { path: `/` });
-          alert(`Bienvenido ${respuesta.nombre}`);
+          cookies.set('cedulas', respuesta.cedulas, { path: `/` });
+          cookies.set('nombres', respuesta.nombres, { path: `/` });
+          cookies.set('apellidos', respuesta.apellidos, { path: `/` });
           window.location.href = `.${Routes.Home}`;
         } else {
-          alert('El usuario o la contraseña no son correctos');
+          swal("¡Incorrecto!", "La cédula inscrita es incorrecta, verifica de nuevo", "error");
+          // alert("Cedula Incorrecta");
         }
       })
       .catch(error => {
@@ -49,7 +55,7 @@ class Login extends Component {
   }
 
   componentDidMount() {
-    if (cookies.get('nombre')) {
+    if (cookies.get('cedulas')) {
       window.location.href = `${Routes.Home}`;
     }
   }
@@ -58,10 +64,10 @@ class Login extends Component {
     return (
       <div className="Login">
         <h1>Catálogo Digital</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi nostrum officiis quo mollitia aut.</p>
+        <p>Te damos calurosa bienvenida a nuestro nuevo <b>Catálogo Digital de Colgate</b>. <br /> Para poder ingresar, digita tu cédula en el siguiente recuadro:</p>
         <div className="form">
-          <input type="text" placeholder="Cédula" name="cedula" className="form-control me-2 inputLogin" onChange={this.handleChange} />
-          <button type="submit" className="btn" onClick={() => this.iniciarSesion()}>Ingresar</button>
+          <input type="text" placeholder="Cédula" name="cedulas" className="form-control me-2 inputLogin" onChange={this.handleChange} />
+          <button type="submit" className="btn btnLogin" onClick={() => this.iniciarSesion()}>Ingresar</button>
         </div>
       </div>
     );

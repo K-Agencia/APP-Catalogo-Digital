@@ -41,7 +41,7 @@ function SearchBar() {
           type="search"
           value={wordEntered}
           onChange={handleFilter}
-          placeholder="Buscar"
+          placeholder="Buscar Producto"
           aria-label="Search"
         />
       </div>
