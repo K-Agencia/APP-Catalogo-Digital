@@ -1,6 +1,7 @@
 let Logo = "https://imagenes.kagencia.com/catalogodigital/Colgate_logo.png";
 let buttonCart = "https://imagenes.kagencia.com/catalogodigital/Landing/Comprar_Ahora.png"
 let buttonWhatsapp = "https://imagenes.kagencia.com/catalogodigital/Landing/Contacte_a_su_asesor.png"
+let iconSearch = "https://imagenes.kagencia.com/catalogodigital/search.svg";
 
 //////// ladingPage ////////
 let slider1_1 = "https://imagenes.kagencia.com/catalogodigital/Landing/KV_Duraphat.jpg";
@@ -61,7 +62,8 @@ let imgMultibeneficios_7 = "https://imagenes.kagencia.com/catalogodigital/Multib
 export const Images = {
     "Logo": Logo,
     "buttonCart": buttonCart,
-    "buttonWhatsapp": buttonWhatsapp
+    "buttonWhatsapp": buttonWhatsapp,
+    "iconSearch": iconSearch
 }
 
 // export const LadingPage_Slider1 = [

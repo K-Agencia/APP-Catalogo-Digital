@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Images } from "../Constants/Images";
 import { Routes } from '../Constants/Routes';
 import SearchBar from './SearchBar';
-import Cookies from 'universal-cookie'; 
+import Cookies from 'universal-cookie';
 import "../css/Nav.css";
 
 const cookies = new Cookies();
@@ -11,6 +11,7 @@ class Nav extends Component {
 
   state = {
     visible: false,
+    visibleSearch: false,
     user: false
   }
 
@@ -25,7 +26,15 @@ class Nav extends Component {
     if (this.state.visible === true) {
       this.setState({ visible: false });
     } else {
-      this.setState({ visible: true });
+      this.setState({ visible: true, visibleSearch: false });
+    }
+  }
+
+  menuSearch = () => {
+    if (this.state.visibleSearch === true) {
+      this.setState({ visibleSearch: false });
+    } else {
+      this.setState({ visibleSearch: true, visible: false });
     }
   }
 
@@ -90,20 +99,29 @@ class Nav extends Component {
                 </li>
               </ul>
 
+              {/* Cel Phone */}
               <div className={this.state.user === true && cel < 480 ? "navCel" : "navNoVisible"}>
                 <SearchBar></SearchBar>
                 <hr />
                 <p className="nameLogin">{`${Name} ${LastName}`}</p>
                 <button className="btnCS" onClick={() => this.cerrarSesion()}>Cerrar Sesión</button>
               </div>
+            </div>
 
+            {/* Nav Bar */}
+
+            <div className={this.state.user === true && cel > 480 ? "divIconSearch" : "navNoVisible"} onClick={() => this.menuSearch()}>
+              <img className="iconSearch" src={Images.iconSearch} alt="" />
+            </div>
+
+            <div className={this.state.visibleSearch === true && cel > 480 ? "navVisibleSearch navVisible dis" : "navNoVisible"}>
+              <SearchBar></SearchBar>
             </div>
 
             <button className={this.state.user === true && cel > 480 ? "btnUser btn" : "navNoVisible"} onClick={() => this.menu()}>{Letters}</button>
 
             <div className={this.state.visible === true && cel > 480 ? "navVisible dis" : "navNoVisible"}>
               <p className="nameLogin">{`${Name} ${LastName}`}</p>
-              <SearchBar></SearchBar>
               <button className="btnCS" onClick={() => this.cerrarSesion()}>Cerrar Sesión</button>
             </div>
 

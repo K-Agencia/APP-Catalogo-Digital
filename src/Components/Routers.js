@@ -5,6 +5,7 @@ import Catalogo from '../Pages/Catalogo';
 import ReactGA from 'react-ga';
 import { Routes } from '../Constants/Routes';
 import Login from '../Pages/Login';
+import Admin from '../Pages/Admin';
 
 const Routers = () => {
 
@@ -26,7 +27,7 @@ const Routers = () => {
                     <Route exact path={Routes.Multibeneficios} component={() => <Catalogo title="Multibeneficios"></Catalogo>} />
                     <Route exact path={Routes.LineaInfantil} component={() => <Catalogo title="Línea Infantil"></Catalogo>} />
                     <Route exact path={Routes.Login} component={() => <Login></Login>} />
-                    {/* <Route path="*" component={Error} /> */}
+                    <Route exact path="/Adimin" component={() => <Admin></Admin>} />
                 </Switch>
             </Router>
         </div>

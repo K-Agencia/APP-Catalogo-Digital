@@ -77,6 +77,11 @@ h3.navTitle {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+img.navImgSearch{
+    width: 30px;
+    background: #da0000;
+}
+
 .navVisible.dis {
     display: flex;
     flex-direction: column;
@@ -85,7 +90,7 @@ h3.navTitle {
 }
 
 .btnUser,
-.navCel {
+.navCel, .navVisibleSearch {
     display: block;
 }
 
@@ -122,6 +127,10 @@ hr {
     align-items: center;
 }
 
+.iconSearch{
+   width: 20px;
+   margin-right: 20px;
+}
 /* @media only screen and (max-width: 1400px) {
     .navVisible {
         display: block;

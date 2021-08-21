@@ -64,7 +64,7 @@ class Login extends Component {
     return (
       <div className="Login">
         <h1>Catálogo Digital</h1>
-        <p>Te damos calurosa bienvenida a nuestro nuevo <b>Catálogo Digital de Colgate</b>. <br /> Para poder ingresar, digita tu cédula en el siguiente recuadro:</p>
+        <p>Le damos una calurosa bienvenida a nuestro nuevo <b>Catálogo Digital de Colgate</b>. <br /> Para poder ingresar, digita tu cédula en el siguiente recuadro:</p>
         <div className="form">
           <input type="text" placeholder="Cédula" name="cedulas" className="form-control me-2 inputLogin" onChange={this.handleChange} />
           <button type="submit" className="btn btnLogin" onClick={() => this.iniciarSesion()}>Ingresar</button>
