@@ -126,7 +126,7 @@ class Nav extends Component {
             </div>
 
           </div>
-          <h3 className="navTitle">Cátalogo Digital</h3>
+          <h3 className="navTitle">Catálogo Digital</h3>
         </nav>
 
       </div>

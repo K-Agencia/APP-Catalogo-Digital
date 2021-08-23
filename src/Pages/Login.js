@@ -25,7 +25,7 @@ class Login extends Component {
         [e.target.name]: e.target.value
       }
     });
-    console.log(this.state.form);
+    // console.log(this.state.form);
   }
 
   iniciarSesion = async () => {
@@ -34,9 +34,9 @@ class Login extends Component {
         return response.data;
       })
       .then(response => {
-        console.log(response);
+        // console.log(response);
         let count = Object.keys(response).length;
-        if (count === 6) {
+        if (count >= 7) {
           var respuesta = response;
           cookies.set('id', respuesta.id, { path: `/` });
           cookies.set('cedulas', respuesta.cedulas, { path: `/` });
