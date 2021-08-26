@@ -41,7 +41,7 @@ class Catalogo extends Component {
                     <div key={index} id={index}>
                         <img className="imgCatalogo" src={prod.img} alt="" />
                         <div className="buttonsCatalogo">
-                            <Button ctgTitle={name} name={prod.name} url={prod.cart} icon="cart"></Button>
+                            <Button ctgTitle={prod._id} name={prod.name} url={prod.cart} icon="cart"></Button>
                             <Button ctgTitle={name} name={prod.name} url={prod.whatsapp} icon="whatsapp"></Button>
                         </div>
                     </div>
