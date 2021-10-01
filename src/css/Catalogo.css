@@ -2,6 +2,14 @@
     width: 90%;
     margin: 1.5em auto;
     padding: 0 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.Catalogo .productoCatalogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .titleCatalogo {
@@ -14,14 +22,22 @@
 }
 
 .imgCatalogo {
-    width: 100%;
+    width: 85%;
     position: relative;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .buttonsCatalogo {
     display: flex;
+    align-self: flex-start;
+    margin-left: 6em;
     height: 20px;
+}
+
+@media only screen and (max-width: 770px) {
+    .imgCatalogo {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -35,9 +51,14 @@
         font-size: 1.5em;
     }
 
+    .imgCatalogo {
+        width: 100%;
+    }
+
     .buttonsCatalogo {
         display: flex;
         flex-direction: row;
+        margin-left: 0em;
         height: 10px;
     }
 }

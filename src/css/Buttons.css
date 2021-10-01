@@ -31,6 +31,28 @@
     display: none;
 }
 
+@media only screen and (max-width: 770px) {
+    .imgButton{
+        width: 50px;
+    }
+
+    .url p{
+        display: none;
+    }
+
+    .url{
+        width: 80px;
+        display: flex;
+        /* flex-direction: column; */
+        margin: 0.2em;
+    
+        z-index: 100;
+        position: relative;
+        bottom: 70px;
+        left: -80px;
+    }
+}
+
 @media only screen and (max-width: 480px) {
     .imgButton{
         width: 30px;

@@ -38,7 +38,7 @@ class Catalogo extends Component {
             <div className="Catalogo" >
                 <h1 className="titleCatalogo">{name}</h1>
                 {data.map((prod, index) => (
-                    <div key={index} id={index}>
+                    <div key={index} id={index} className="productoCatalogo">
                         <img className="imgCatalogo" src={prod.img} alt="" />
                         <div className="buttonsCatalogo">
                             <Button ctgTitle={prod._id} name={prod.name} url={prod.cart} icon="cart"></Button>
