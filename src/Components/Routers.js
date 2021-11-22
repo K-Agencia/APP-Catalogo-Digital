@@ -10,7 +10,7 @@ import Admin from '../Pages/Admin';
 const Routers = () => {
 
     useEffect(() => {
-        ReactGA.initialize('UA-204757348-2');
+        ReactGA.initialize('UA-204757348-3');
         // To Report Page View 
         ReactGA.pageview(window.location.pathname + window.location.search);
     }, [])
