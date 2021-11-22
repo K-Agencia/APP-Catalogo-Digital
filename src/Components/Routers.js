@@ -4,7 +4,7 @@ import LandingPage from '../Pages/LandingPage';
 import Catalogo from '../Pages/Catalogo';
 import ReactGA from 'react-ga';
 import { Routes } from '../Constants/Routes';
-import Login from '../Pages/Login';
+// import Login from '../Pages/Login';
 import Admin from '../Pages/Admin';
 
 const Routers = () => {
@@ -26,7 +26,7 @@ const Routers = () => {
                     <Route exact path={Routes.LineaSensibilidad} component={() => <Catalogo title="Línea Sensibilidad"></Catalogo>} />
                     <Route exact path={Routes.Multibeneficios} component={() => <Catalogo title="Multibeneficios"></Catalogo>} />
                     <Route exact path={Routes.LineaInfantil} component={() => <Catalogo title="Línea Infantil"></Catalogo>} />
-                    <Route exact path={Routes.Login} component={() => <Login></Login>} />
+                    {/* <Route exact path={Routes.Login} component={() => <Login></Login>} /> */}
                     <Route exact path="/Adimin" component={() => <Admin></Admin>} />
                 </Switch>
             </Router>

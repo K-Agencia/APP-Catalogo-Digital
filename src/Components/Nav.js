@@ -15,12 +15,12 @@ class Nav extends Component {
     user: false
   }
 
-  cerrarSesion = () => {
-    cookies.set('id', "", { path: `/` });
-    cookies.set('cedulas', "", { path: `/` });
-    cookies.set('nombres', "", { path: `/` });
-    window.location.href = `${Routes.Login}`;
-  }
+  // cerrarSesion = () => {
+  //   cookies.set('id', "", { path: `/` });
+  //   cookies.set('cedulas', "", { path: `/` });
+  //   cookies.set('nombres', "", { path: `/` });
+  //   window.location.href = `${Routes.Login}`;
+  // }
 
   menu = () => {
     if (this.state.visible === true) {
@@ -39,11 +39,11 @@ class Nav extends Component {
   }
 
   componentDidMount() {
-    if (cookies.get('cedulas') === "" || cookies.get('cedulas') === undefined) {
-      this.setState({ user: false });
-    } else {
-      this.setState({ user: true });
-    }
+    // if (cookies.get('cedulas') === "" || cookies.get('cedulas') === undefined) {
+    //   this.setState({ user: false });
+    // } else {
+    //   this.setState({ user: true });
+    // }
   }
 
   render() {
@@ -52,11 +52,11 @@ class Nav extends Component {
     let LastName = cookies.get('apellidos');
     let Letters = ""; //`${Name.charAt(0).toUpperCase()}${LastName.charAt(0).toUpperCase()}`;
 
-    if (cookies.get('cedulas') === "" || cookies.get('cedulas') === undefined) {
-      Letters = "NN";
-    } else {
-      Letters = `${Name.charAt(0).toUpperCase()}${LastName.charAt(0).toUpperCase()}`;
-    }
+    // if (cookies.get('cedulas') === "" || cookies.get('cedulas') === undefined) {
+      Letters = "ES";
+    // } else {
+    //   Letters = `${Name.charAt(0).toUpperCase()}${LastName.charAt(0).toUpperCase()}`;
+    // }
 
     let cel = window.screen.width;
 
@@ -94,9 +94,9 @@ class Nav extends Component {
                 <li className="nav-item">
                   <a className="nav-link" href={Routes.LineaInfantil}>Línea Infantil</a>
                 </li>
-                <li className="nav-item prep">
+                {/* <li className="nav-item prep">
                   <a className="nav-link" target="blank" href={Routes.Prescripcion}>Prescripciones Odontológicas</a>
-                </li>
+                </li> */}
               </ul>
 
               {/* Cel Phone */}
@@ -104,7 +104,7 @@ class Nav extends Component {
                 <SearchBar></SearchBar>
                 <hr />
                 <p className="nameLogin">{`${Name} ${LastName}`}</p>
-                <button className="btnCS" onClick={() => this.cerrarSesion()}>Cerrar Sesión</button>
+                {/* <button className="btnCS" onClick={() => this.cerrarSesion()}>Cerrar Sesión</button> */}
               </div>
             </div>
 
@@ -122,7 +122,7 @@ class Nav extends Component {
 
             <div className={this.state.visible === true && cel > 480 ? "navVisible dis" : "navNoVisible"}>
               <p className="nameLogin">{`${Name} ${LastName}`}</p>
-              <button className="btnCS" onClick={() => this.cerrarSesion()}>Cerrar Sesión</button>
+              {/* <button className="btnCS" onClick={() => this.cerrarSesion()}>Cerrar Sesión</button> */}
             </div>
 
           </div>

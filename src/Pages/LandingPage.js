@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
 import { Routes } from '../Constants/Routes';
-import Cookies from 'universal-cookie'; 
+// import Cookies from 'universal-cookie'; 
 import Slider from '../Components/Slider';
 import { LadingPage_Slider1 } from '../Constants/Images';
 import "../css/LandingPage.css";
 
-const cookies = new Cookies();
+// const cookies = new Cookies();
 
 class LandingPage extends Component {
 
-    componentDidMount() {
-        if (cookies.get('cedulas') === "" || cookies.get('cedulas') === undefined) {
-            window.location.href = `${Routes.Login}`;
-        }
-    }
+    // componentDidMount() {
+    //     if (cookies.get('cedulas') === "" || cookies.get('cedulas') === undefined) {
+    //         window.location.href = `${Routes.Login}`;
+    //     }
+    // }
     
     render() {
         window.document.title = 'Home - Catálogo Digital';

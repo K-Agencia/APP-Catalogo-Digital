@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Button from '../Components/Button';
 import { UsoConsultorio, LineaEspecializada, CepillosEspecializados, LineaSensibilidad, Multibeneficios, LineaInfantil } from "../Constants/Productos";
-import { Routes } from '../Constants/Routes'; 
-import Cookies from 'universal-cookie';
+// import { Routes } from '../Constants/Routes'; 
+// import Cookies from 'universal-cookie';
 import "../css/Catalogo.css";
 
 const getArray = (title) => {
@@ -14,7 +14,7 @@ const getArray = (title) => {
     else if (title === "Línea Infantil") { return LineaInfantil }
 }
 
-const cookies = new Cookies();
+// const cookies = new Cookies();
 
 class Catalogo extends Component {
 
@@ -22,11 +22,11 @@ class Catalogo extends Component {
         title: this.props.title
     };
 
-    componentDidMount() {
-        if (cookies.get('cedulas') === "" || cookies.get('cedulas') === undefined) {
-            window.location.href = `${Routes.Login}`;
-        }
-    }
+    // componentDidMount() {
+    //     if (cookies.get('cedulas') === "" || cookies.get('cedulas') === undefined) {
+    //         window.location.href = `${Routes.Login}`;
+    //     }
+    // }
 
     render() {
         window.document.title = `${this.state.title} - Catálogo Digital`;
@@ -41,7 +41,7 @@ class Catalogo extends Component {
                     <div key={index} id={index} className="productoCatalogo">
                         <img className="imgCatalogo" src={prod.img} alt="" />
                         <div className="buttonsCatalogo">
-                            <Button ctgTitle={prod._id} name={prod.name} url={prod.cart} icon="cart"></Button>
+                            {/* <Button ctgTitle={prod._id} name={prod.name} url={prod.cart} icon="cart"></Button> */}
                             <Button ctgTitle={name} name={prod.name} url={prod.whatsapp} icon="whatsapp"></Button>
                         </div>
                     </div>
