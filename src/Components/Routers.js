@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import LandingPage from '../Pages/LandingPage';
 import Catalogo from '../Pages/Catalogo';
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 import { Routes } from '../Constants/Routes';
 import Login from '../Pages/Login';
 import Admin from '../Pages/Admin';
@@ -10,9 +10,9 @@ import Admin from '../Pages/Admin';
 const Routers = () => {
 
     useEffect(() => {
-        ReactGA.initialize('UA-204757348-2');
+        ReactGA.initialize('G-EM2KT29127');
         // To Report Page View 
-        ReactGA.pageview(window.location.pathname + window.location.search);
+        ReactGA.send(window.location.pathname + window.location.search);
     }, [])
     
     return (

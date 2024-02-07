@@ -6,7 +6,7 @@
     flex-direction: column;
 }
 
-.Catalogo .productoCatalogo{
+.Catalogo .productoCatalogo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,6 +32,72 @@
     align-self: flex-start;
     margin-left: 6em;
     height: 20px;
+}
+
+.logosDomicilios {
+    width: 100%;
+    margin: 0 0 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+
+.logosDomicilios h2 {
+    width: 100%;
+    margin: 1em auto 1.2em;
+}
+
+.logosDomicilios h3 {
+    width: 100%;
+    margin: 0 auto;
+    color: black;
+    font-size: 1.2em;
+}
+
+.listDomicilios {
+    width: 100%;
+}
+
+.divList{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.listDomicilios div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.listDomiciliosD {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logosDomicilios a,
+.listDomiciliosD a {
+    margin: 0;
+}
+
+.logosDomicilios a img,
+.listDomiciliosD a img {
+    width: 100%;
+    border: 2px solid rgba(185, 185, 185, .5);
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 20px;
+    transition: .3s ease all;
+}
+
+.logosDomicilios a img:hover,
+.listDomiciliosD a img:hover {
+    background: rgba(185, 185, 185, .4);
+    transform: scale(1.02);
 }
 
 @media only screen and (max-width: 770px) {
@@ -60,5 +126,47 @@
         flex-direction: row;
         margin-left: 0em;
         height: 10px;
+    }
+
+    .divList{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logosDomicilios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .listDomiciliosD {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .logosDomicilios h3 {
+        width: 100%;
+        font-size: 0.9em;
+    }
+
+    .listDomiciliosD div {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .logosDomicilios a img,
+    .listDomiciliosD a img {
+        width: 90%;
+        border: 2px solid rgba(185, 185, 185, .5);
+        margin: 10px 0;
+        padding: 15px;
+        border-radius: 20px;
+        transition: .3s ease all;
     }
 }

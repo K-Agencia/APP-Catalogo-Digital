@@ -20,6 +20,12 @@
     left: 60px;
 }
 
+button.url{
+    border: 0px;
+    background: transparent;
+    padding: 0px;
+}
+
 .url:hover{
     background: transparent;
     transform: scale(1.03);

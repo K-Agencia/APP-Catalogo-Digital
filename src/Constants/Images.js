@@ -1,7 +1,11 @@
+import LineaNacional from "../img/lineanacional.svg";
+
 let Logo = "https://imagenes.kagencia.com/catalogodigital/Colgate_logo.png";
 let buttonCart = "https://imagenes.kagencia.com/catalogodigital/Landing/Comprar_Ahora.png"
 let buttonWhatsapp = "https://imagenes.kagencia.com/catalogodigital/Landing/Contacte_a_su_asesor.png"
 let iconSearch = "https://imagenes.kagencia.com/catalogodigital/search.svg";
+let logo_laRebaja = "https://imagenes.kagencia.com/catalogodigital/logo_larebaja.svg";
+let logo_loPido = "https://imagenes.kagencia.com/catalogodigital/logo_lopido.svg";
 
 //////// ladingPage ////////
 let slider1_1 = "https://imagenes.kagencia.com/catalogodigital/Landing/KV_Duraphat.jpg";
@@ -63,7 +67,10 @@ export const Images = {
     "Logo": Logo,
     "buttonCart": buttonCart,
     "buttonWhatsapp": buttonWhatsapp,
-    "iconSearch": iconSearch
+    "iconSearch": iconSearch,
+    "logo_laRebaja": logo_laRebaja,
+    "logo_loPido": logo_loPido,
+    "LineaNacional": LineaNacional,
 }
 
 // export const LadingPage_Slider1 = [
